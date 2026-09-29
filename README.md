@@ -9,7 +9,7 @@
 ![Licencia](https://img.shields.io/github/license/mefernandez-saes/legion-del-mal)
 
 
-# 🦹‍♂️ La Legión del Mal - la original
+# 🦹‍♂️ La Legión del Mal - la original Local
 
 > _"El mundo no se conquista con fuerza bruta, se conquista con un buen plan y control de versiones."_
 > — Lex Luthor, fundador
