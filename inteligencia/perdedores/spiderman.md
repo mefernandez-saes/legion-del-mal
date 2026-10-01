@@ -50,3 +50,13 @@ La estrategia óptima es la distracción: crear múltiples emergencias simultán
 
 _"Yo destruí Krypton. Puedo destruirlo a él."_ — Brainiac
 _"Llevas 20 años diciendo eso."_ — Lex Luthor
+
+## Info conocidos 
+
+Información sobre los conocidos de Spiderman.
+
+## Info películas Spiderman
+
+- Peli 1
+- Peli 2
+- Peli 3
