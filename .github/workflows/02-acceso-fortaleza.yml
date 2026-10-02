@@ -1,5 +1,6 @@
 name: 🌋Acceso a la fortaleza
-on: push 
+on: 
+    workflow_dispatch:
 
 jobs:
     reporte-de-reclutamiento:
@@ -14,3 +15,21 @@ jobs:
                 ls -la
                 echo ""
                 echo "❌ qué pasó? No hay nada aquí."
+
+            - name: "Braniac desbloquea la caja fuerte"
+              uses: actions/checkout@v4
+
+            - name: "Ahora sí, manos a ver los planes"
+              run: |
+                echo "Buscar los archivos de la legión"
+                ls -la
+                echo "✅ Ahora sí, funciona!!"
+                echo ""
+                echo "Planes:"
+                ls planes/
+                echo "Villanos"
+                ls villanos/
+                echo "Inteligencia"
+                ls inteligencia/
+
+
