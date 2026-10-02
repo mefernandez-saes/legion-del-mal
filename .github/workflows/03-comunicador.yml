@@ -16,7 +16,7 @@ on:
                 required: true
                 type: string
                 default: 'La misión es un éxito'
-                
+
             prioridad:
                 description: 'Nivel de prioridad'
                 required: true
@@ -32,5 +32,11 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
-            - uses: actions/checkout@v4
+            - name: Imprimir inputs
+              run: |
+                echo "Villano: ${{ github.event.inputs.villano }}"
+                echo "Mensaje: ${{ github.event.inputs.mensaje }}"
+                echo "Prioridad: ${{ github.event.inputs.prioridad }}"
+                echo "Mensaje completo: Villano ${{ github.event.inputs.villano }} dice '${{ github.event.inputs.mensaje }}' con prioridad ${{ github.event.inputs.prioridad }}"
+            
 
