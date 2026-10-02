@@ -27,6 +27,20 @@ on:
                   - 🟡 media
                   - 🟢 baja
 
+            cow_character:
+                description: 'Dibujo para cowsay'
+                required: true
+                type: choice
+                options:
+                  - eyes
+                  - tux
+                  - dragon
+                  - ghostbusters
+                  - bunny
+                  - cat
+
+            
+
 jobs:
     trasmitir-mensaje:
         runs-on: ubuntu-latest
@@ -46,7 +60,7 @@ jobs:
                 echo ""
                 echo "Fecha: $(date -u +"%d/%m/%Y - %H:%M UTC")"
                 echo "===================="
-                cowsay -f eyes "${{ github.event.inputs.mensaje }}" 
+                cowsay -f ${{ github.event.inputs.cow_character }} "${{ github.event.inputs.mensaje }}" 
                 echo ""
                 echo "-----${{ github.event.inputs.villano }}-----"
                 echo ""
