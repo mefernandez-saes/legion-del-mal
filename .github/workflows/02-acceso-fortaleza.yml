@@ -31,5 +31,4 @@ jobs:
                 ls miembros/
                 echo "Inteligencia"
                 ls inteligencia/
-
-
+                
