@@ -11,6 +11,22 @@ on:
                   - lex_luthor
                   - harley_quinn
 
+            mensaje:
+                description: 'Contenido del mensaje'
+                required: true
+                type: string
+                default: 'La misión es un éxito'
+                
+            prioridad:
+                description: 'Nivel de prioridad'
+                required: true
+                type: choice
+                options:
+                  - 🔴 urgente
+                  - 🟠 alta
+                  - 🟡 media
+                  - 🟢 baja
+
 jobs:
     trasmitir-mensaje:
         runs-on: ubuntu-latest
