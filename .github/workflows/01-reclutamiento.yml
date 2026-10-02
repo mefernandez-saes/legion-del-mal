@@ -7,6 +7,19 @@ jobs:
 
         steps:
             - name: El agente se presenta
-              run: echo "Hola, soy el nuevo agente."
+              run: echo "Hola, soy el nuevo agente." 
+
+            - name: Reporte de identidad
+              run: |
+                echo "Reporte de identidad"
+                echo "===================="
+                echo "Nombre: ${{ github.actor }}"
+                echo "Fecha de ingreso: $(date)"
+                echo "Contexto de GitHub"
+                echo "Repositorio: ${{ github.repository }}"
+                echo "Operación: ${{ github.sha }}"
+                echo "Metadata: ${{ toJSON(github) }}"
+                echo "===================="
+              
 
 
