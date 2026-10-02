@@ -37,10 +37,8 @@ on:
                   - dragon
                   - ghostbusters
                   - bunny
-                  - cat
 
             
-
 jobs:
     trasmitir-mensaje:
         runs-on: ubuntu-latest
