@@ -1,0 +1,21 @@
+name: Control de Calidad
+
+on:
+    push:
+      branches: [main]
+    pull_request:
+      branches: [main]
+    workflow_dispatch:
+
+
+jobs:
+    revision-de-calidad:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout repository
+            uses: actions/checkout@v4
+
+          - name: El consejo revisa los cambios
+            run: |
+              chmod +x scripts/validar-planes.sh
+              ./scripts/validar-planes.sh
